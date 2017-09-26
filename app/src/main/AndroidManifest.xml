@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.verona1024.tutlub">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_icon"
+        android:supportsRtl="true"
+        android:name=".ThisApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.feed.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.feed.StartActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.LogInActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.RegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.RegistrationEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.RegistrationPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.VerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.main.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.LetsGetStartedActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.ActivityInviteFriends" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.feed.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activities.main.CommentActivity" android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activities.main.LikersListActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".activities.main.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".activities.main.EditUserInfoActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".activities.main.PersonProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".activities.main.LevelActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".activities.main.NewsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBar"/>
+        <activity android:name=".activities.main.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeActionBarSettings"/>
+        <activity android:name=".activities.main.SearchActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".services.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+                <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.RegistrationIntentService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".services.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBPGErZDFfHJbPEjLwwTDTZqMGFd2Y9_lo"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1505846559425898"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+    </application>
+
+</manifest>

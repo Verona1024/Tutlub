@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <flepsik.github.com.progress_ring.ProgressRingView
+        android:id="@+id/progress_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:background_progress_color="@android:color/transparent"
+        app:progress_color="@color/colorPrimary"
+        app:progress="0.5"
+        app:ring_width="10dp"
+        app:animated="true"
+        app:animation_duration="500"
+        app:background_color="@android:color/transparent"
+        app:corner_edges="true"
+        app:progress_fill="false"/>
+
+</RelativeLayout>

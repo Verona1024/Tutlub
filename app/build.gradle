@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.tutlub.lifestyle"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 68
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+    maven {
+        url 'https://dl.bintray.com/farhanahmed95/maven/'
+    }
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.curioustechizen.android-ago:library:1.3.4'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile('com.github.farhanahmed95:httpfilerequest:2.0.2@aar') {
+        transitive = true;
+    }
+    compile 'com.google.firebase:firebase-core:11.0.2'
+    compile "com.google.android.gms:play-services-gcm:11.0.2"
+    compile 'com.google.android.gms:play-services-places:11.0.2'
+    compile 'com.github.flepsik:progress-ring-view:1.1.2'
+    compile 'com.google.firebase:firebase-messaging:11.0.2'
+    compile 'com.seatgeek:placesautocomplete:0.2-SNAPSHOT'
+    compile 'com.google.firebase:firebase-ads:11.0.2'
+    compile 'com.google.firebase:firebase-auth:11.0.2'
+    compile 'com.github.whalemare:sheetmenu:1.3.3'
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeNews"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp"
+        android:padding="8dp">
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textColor="#9E9E9E" />
+
+        <TextView
+            android:id="@+id/textViewTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textColor="#9E9E9E" />
+
+        <ImageView
+            android:id="@+id/imageViewPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageViewPicture"
+            android:layout_marginRight="8dp"
+            android:layout_toStartOf="@+id/imageViewPicture"
+            android:maxLines="2"
+            android:text="Title"
+            android:textColor="#757575"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toStartOf="@+id/imageViewPicture"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textColor="#757575" />
+
+    </RelativeLayout>
+
+</LinearLayout>

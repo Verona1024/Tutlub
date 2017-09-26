@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/feedback_like_it"
+        app:showAsAction="never"
+        android:title="I like it!"/>
+
+    <item
+        android:id="@+id/feedback_need_help"
+        app:showAsAction="never"
+        android:title="I need help..."/>
+
+</menu>

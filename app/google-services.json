@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "584315086285",
+    "firebase_url": "https://tutlub-lifestyle.firebaseio.com",
+    "project_id": "tutlub-lifestyle",
+    "storage_bucket": "tutlub-lifestyle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584315086285:android:04fa32a8d35f9ac2",
+        "android_client_info": {
+          "package_name": "com.tutlub.tutlub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584315086285-vt7vup9t8nf0afu6n5ri4sk2fbk52247.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tutlub.tutlub",
+            "certificate_hash": "4630affbd1fb0a5b0eab65563c4da178e86dd51c"
+          }
+        },
+        {
+          "client_id": "584315086285-1r3mlqdnq0r9ej4abj7jfvu08h8psk8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV-1bbNNXFlUkcPhpHpXPNyVw6s-gpCTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584315086285-1r3mlqdnq0r9ej4abj7jfvu08h8psk8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584315086285:android:77a44e25751c1461",
+        "android_client_info": {
+          "package_name": "com.swiftsoft.tutlub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584315086285-1r3mlqdnq0r9ej4abj7jfvu08h8psk8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV-1bbNNXFlUkcPhpHpXPNyVw6s-gpCTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584315086285:android:f33b8e8e5bf1f182",
+        "android_client_info": {
+          "package_name": "com.tutlub.lifestyle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584315086285-1r3mlqdnq0r9ej4abj7jfvu08h8psk8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV-1bbNNXFlUkcPhpHpXPNyVw6s-gpCTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
